@@ -10,9 +10,12 @@ import SwiftUI
 struct ActionButton: View {
     let color: Color
     let title: String
+    let action: () -> ()
     
     var body: some View {
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+        Button(action: {
+            action()
+        }, label: {
             Text(title.uppercased())
                 .font(.system(size: 12, weight: .semibold, design: .default))
                 .foregroundColor(.black)

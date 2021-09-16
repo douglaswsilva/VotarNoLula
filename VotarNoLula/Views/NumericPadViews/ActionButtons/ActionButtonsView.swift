@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ActionButtonsView: View {
+    @ObservedObject var model: VotarNoLulaViewModel
+    
     var body: some View {
         HStack {
-            ActionButton(color: .white, title: "Branco")
-            ActionButton(color: .orange, title: "Corrige")
-            ActionButton(color: .green, title: "Confirma")
+            ActionButton(color: .white, title: "Branco", action: model.branco)
+            ActionButton(color: .orange, title: "Corrige", action: model.corrige)
+            ActionButton(color: .green, title: "Confirma", action: model.confirma)
         }
         .padding()
     }

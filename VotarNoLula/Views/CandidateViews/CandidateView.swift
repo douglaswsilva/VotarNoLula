@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct CandidateView: View {
+    @ObservedObject var model: VotarNoLulaViewModel
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Presidente")
                 .font(.title2)
-            CandidateNumbers()
+            CandidateNumbers(numbers: $model.number)
             Text("Nome:")
             Text("Partido:")
             Spacer()

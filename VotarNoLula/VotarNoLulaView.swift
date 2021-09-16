@@ -13,12 +13,12 @@ struct VotarNoLulaView: View {
     
     var body: some View {
         HStack {
-            CandidateView()
+            CandidateView(model: model)
             Spacer()
             VStack {
-                NumericPadView()
+                NumericPadView(model: model)
                 Spacer()
-                ActionButtonsView()
+                ActionButtonsView(model: model)
             }
             .background(Color(#colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)))
             .padding()

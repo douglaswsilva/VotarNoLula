@@ -13,5 +13,18 @@ class VotarNoLulaViewModel: ObservableObject {
     
     func appendNumber(_ int: Int) {
         number.append(int)
+        print(number)
+    }
+    
+    func branco() {
+        
+    }
+    
+    func corrige() {
+        number = []
+    }
+    
+    func confirma() {
+        print("Ganhou!")
     }
 }
