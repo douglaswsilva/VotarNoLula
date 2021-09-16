@@ -10,16 +10,16 @@ import Combine
 
 class VotarNoLulaViewModel: ObservableObject {
     @Published var number: [Int] = []
-    @Published var showImage: Bool = false
+    @Published var showCandidate: Bool = false
     
     var bag = Set<AnyCancellable>()
     
     init() {
         $number
             .sink { value in
-                if value.count > 1 {
+                if value.count > 1, value.first == 1, value.last == 3 {
                     print("Lulinha!")
-                    self.showImage = true
+                    self.showCandidate = true
                 }
             }
             .store(in: &bag)
@@ -38,7 +38,7 @@ class VotarNoLulaViewModel: ObservableObject {
     
     func corrige() {
         number = []
-        showImage = false
+        showCandidate = false
     }
     
     func confirma() {
