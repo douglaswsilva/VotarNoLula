@@ -17,5 +17,6 @@ struct NumericPadView: View {
             NumericPadRow(initial: 7, end: 9, model: model)
             NumericPadButton(number: 0, action: { model.appendNumber(0) })
         }
+        .padding(8)
     }
 }
