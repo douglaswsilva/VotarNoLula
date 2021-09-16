@@ -17,6 +17,7 @@ struct ContentView: View {
                 Spacer()
                 ActionButtonsView()
             }
+            .background(Color(#colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)))
             .padding()
         }
     }
@@ -54,45 +55,62 @@ struct CandidateNumberRectangle: View {
 struct NumericPadView: View {
     var body: some View {
         VStack {
-            NumericPadRow()
-            NumericPadRow()
-            NumericPadRow()
-            NumericPadButton()
+            NumericPadRow(initial: 1, end: 3)
+            NumericPadRow(initial: 4, end: 6)
+            NumericPadRow(initial: 7, end: 9)
+            NumericPadButton(number: 0)
         }
     }
 }
 
 struct NumericPadRow: View {
+    let initial: Int
+    let end: Int
+    
     var body: some View {
         HStack {
-            ForEach(0..<3) {_ in
-                NumericPadButton()
+            ForEach(initial..<end+1) { i in
+                NumericPadButton(number: i)
             }
         }
+        
     }
 }
 
 struct NumericPadButton: View {
+    let number: Int
     var body: some View {
-        Rectangle()
-            .frame(width: 50, height: 50, alignment: .center)
+        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Text("\(number)")
+                .foregroundColor(Color(#colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)))
+        })
+        .frame(width: 90, height: 65, alignment: .center)
     }
 }
 
 struct ActionButtonsView: View {
     var body: some View {
         HStack {
-            ActionButton()
-            ActionButton()
-            ActionButton()
+            ActionButton(color: .white, title: "Branco")
+            ActionButton(color: .orange, title: "Corrige")
+            ActionButton(color: .green, title: "Confirma")
         }
+        .padding()
     }
 }
 
 struct ActionButton: View {
+    let color: Color
+    let title: String
+    
     var body: some View {
-        Rectangle()
-            .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Text(title.uppercased())
+                .font(.system(size: 12, weight: .semibold, design: .default))
+                .foregroundColor(.black)
+        })
+        .frame(width: 90, height: 50, alignment: .center)
+        .background(color)
     }
 }
 
@@ -101,6 +119,6 @@ struct ActionButton: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewLayout(.fixed(width: 2688, height: 1242))
+            .previewLayout(.fixed(width: 812, height: 375))
     }
 }
