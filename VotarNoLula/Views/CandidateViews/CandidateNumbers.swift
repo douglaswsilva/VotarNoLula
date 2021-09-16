@@ -22,7 +22,7 @@ struct CandidateNumbers: View {
         if numbers.count > 0 {
             return "\(numbers[0])"
         } else {
-            return ""
+            return " "
         }
     }
     
@@ -30,7 +30,7 @@ struct CandidateNumbers: View {
         if numbers.count > 1 {
             return "\(numbers[1])"
         } else {
-            return ""
+            return " "
         }
     }
 }

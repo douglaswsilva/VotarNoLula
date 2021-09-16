@@ -27,19 +27,27 @@ struct CandidateView: View {
                 Spacer()
                 if model.showCandidate {
                     Image("lula")
+                        .padding(.horizontal, 12)
                 }
             }
-            if model.showCandidate {
-                VStack(alignment: .leading) {
-                    Divider()
+ 
+            VStack(alignment: .leading) {
+                Divider()
+                if model.showCandidate {
                     Text("""
                     Aperte a tecla
                     VERDE para CONFIRMAR
                     LARANJA para CORRIGIR
                     """)
+                } else {
+                    Text("""
+                        
+                        
+                        
+                        """)
                 }
-                .padding()
             }
+            .padding()
         }
     }
 }

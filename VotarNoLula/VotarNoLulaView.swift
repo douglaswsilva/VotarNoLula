@@ -12,17 +12,29 @@ struct VotarNoLulaView: View {
     @StateObject var model = VotarNoLulaViewModel()
     
     var body: some View {
-        HStack {
-            CandidateView(model: model)
-            Spacer()
-            VStack {
-                NumericPadView(model: model)
+        if model.moveToNextPage {
+            FimView()
+        } else {
+            HStack {
+                CandidateView(model: model)
                 Spacer()
-                ActionButtonsView(model: model)
+                VStack {
+                    NumericPadView(model: model)
+                    Spacer()
+                    ActionButtonsView(model: model)
+                }
+                .background(Color(#colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)))
+                .padding(.vertical, 16)
             }
-            .background(Color(#colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)))
-            .padding(.vertical, 16)
         }
+    }
+}
+
+struct FimView: View {
+    var body: some View {
+        Text("FIM")
+            .font(.system(size: 120))
+            .foregroundColor(Color(#colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)))
     }
 }
 

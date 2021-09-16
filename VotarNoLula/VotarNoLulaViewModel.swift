@@ -13,6 +13,7 @@ import UIKit
 class VotarNoLulaViewModel: ObservableObject {
     @Published var number: [Int] = []
     @Published var showCandidate: Bool = false
+    @Published var moveToNextPage: Bool = false
     
     var audioPlayer: AVAudioPlayer?
     var bag = Set<AnyCancellable>()
@@ -47,6 +48,11 @@ class VotarNoLulaViewModel: ObservableObject {
     func confirma() {
         print("Ganhou!")
         playSound("confirma")
+        moveToNextPage = true
+        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { timer in
+            self.moveToNextPage = false
+            self.corrige()
+        }
     }
 }
 
