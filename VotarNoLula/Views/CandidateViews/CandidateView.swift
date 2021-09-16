@@ -11,7 +11,7 @@ struct CandidateView: View {
     @ObservedObject var model: VotarNoLulaViewModel
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 12) {
                 Text("Presidente")
                     .font(.title2)
@@ -23,8 +23,9 @@ struct CandidateView: View {
             .font(.system(size: 14, weight: .semibold, design: .default))
             .padding()
             
+            Spacer()
             if model.showImage {
-                Image(systemName: "circle")
+                Image("lula")
             }
         }
 
