@@ -7,11 +7,14 @@
 
 import Foundation
 import Combine
+import AVFoundation
+import UIKit
 
 class VotarNoLulaViewModel: ObservableObject {
     @Published var number: [Int] = []
     @Published var showCandidate: Bool = false
     
+    var audioPlayer: AVAudioPlayer?
     var bag = Set<AnyCancellable>()
     
     init() {
@@ -43,5 +46,21 @@ class VotarNoLulaViewModel: ObservableObject {
     
     func confirma() {
         print("Ganhou!")
+        playSound("confirma")
+    }
+}
+
+extension VotarNoLulaViewModel {
+    func playSound(_ assetName : String) {
+        if let audioData = NSDataAsset(name: assetName)?.data  {
+            do {
+                audioPlayer = try AVAudioPlayer(data: audioData)
+                audioPlayer?.play()
+            } catch {
+                print("ERROR")
+            }
+        } else {
+            print("Nao achou")
+        }
     }
 }
