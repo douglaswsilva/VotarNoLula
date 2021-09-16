@@ -11,15 +11,22 @@ struct CandidateView: View {
     @ObservedObject var model: VotarNoLulaViewModel
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Presidente")
-                .font(.title2)
-            CandidateNumbers(numbers: $model.number)
-            Text("Nome:")
-            Text("Partido:")
-            Spacer()
+        HStack {
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Presidente")
+                    .font(.title2)
+                CandidateNumbers(numbers: $model.number)
+                Text("Nome:")
+                Text("Partido:")
+                Spacer()
+            }
+            .font(.system(size: 14, weight: .semibold, design: .default))
+            .padding()
+            
+            if model.showImage {
+                Image(systemName: "circle")
+            }
         }
-        .font(.system(size: 14, weight: .semibold, design: .default))
-        .padding()
+
     }
 }
