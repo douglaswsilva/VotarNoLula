@@ -15,6 +15,7 @@ struct ActionButtonsView: View {
             ActionButton(color: .white, title: "Branco", action: model.branco)
             ActionButton(color: .orange, title: "Corrige", action: model.corrige)
             ActionButton(color: .green, title: "Confirma", action: model.confirma)
+                .disabled(!model.showCandidate)
         }
         .padding()
     }

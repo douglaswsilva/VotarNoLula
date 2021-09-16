@@ -30,12 +30,15 @@ struct CandidateView: View {
                 }
             }
             if model.showCandidate {
-                Divider()
-                Text("""
-                Aperte a tecla
-                VERDE para CONFIRMAR
-                LARANJA para CORRIGIR
-                """)
+                VStack(alignment: .leading) {
+                    Divider()
+                    Text("""
+                    Aperte a tecla
+                    VERDE para CONFIRMAR
+                    LARANJA para CORRIGIR
+                    """)
+                }
+                .padding()
             }
         }
     }
