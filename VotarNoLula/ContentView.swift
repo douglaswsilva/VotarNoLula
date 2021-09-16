@@ -25,12 +25,16 @@ struct ContentView: View {
 
 struct CandidateView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 12) {
             Text("Presidente")
+                .font(.title2)
             CandidateNumbers()
             Text("Nome:")
             Text("Partido:")
+            Spacer()
         }
+        .font(.system(size: 14, weight: .semibold, design: .default))
+        .padding()
     }
 }
 
@@ -46,8 +50,9 @@ struct CandidateNumbers: View {
 
 struct CandidateNumberRectangle: View {
     var body: some View {
-        Rectangle()
-            .frame(width: 30, height: 50, alignment: .center)
+        Text("")
+            .padding(14)
+            .border(Color.black, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
     }
 }
 
@@ -80,10 +85,13 @@ struct NumericPadRow: View {
 struct NumericPadButton: View {
     let number: Int
     var body: some View {
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+        Button(action: {
+            print(number)
+        }, label: {
             Text("\(number)")
                 .foregroundColor(Color(#colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)))
         })
+        .disabled(number != 1 && number != 3)
         .frame(width: 90, height: 65, alignment: .center)
     }
 }
