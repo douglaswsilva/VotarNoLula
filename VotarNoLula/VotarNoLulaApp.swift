@@ -12,6 +12,7 @@ struct VotarNoLulaApp: App {
     var body: some Scene {
         WindowGroup {
             VotarNoLulaView()
+                .preferredColorScheme(.light)
         }
     }
 }
