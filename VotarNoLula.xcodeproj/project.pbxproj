@@ -8,18 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		C5ECE40126F2EC1200C67785 /* VotarNoLulaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE40026F2EC1200C67785 /* VotarNoLulaApp.swift */; };
-		C5ECE40326F2EC1200C67785 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE40226F2EC1200C67785 /* ContentView.swift */; };
+		C5ECE40326F2EC1200C67785 /* VotarNoLulaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE40226F2EC1200C67785 /* VotarNoLulaView.swift */; };
 		C5ECE40526F2EC1A00C67785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ECE40426F2EC1A00C67785 /* Assets.xcassets */; };
 		C5ECE40826F2EC1A00C67785 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ECE40726F2EC1A00C67785 /* Preview Assets.xcassets */; };
+		C5ECE41026F2F83600C67785 /* VotarNoLulaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE40F26F2F83600C67785 /* VotarNoLulaViewModel.swift */; };
+		C5ECE41526F2F9F300C67785 /* CandidateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE41426F2F9F300C67785 /* CandidateView.swift */; };
+		C5ECE41726F2FA1200C67785 /* CandidateNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE41626F2FA1200C67785 /* CandidateNumbers.swift */; };
+		C5ECE41926F2FA3400C67785 /* CandidateNumberRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE41826F2FA3400C67785 /* CandidateNumberRectangle.swift */; };
+		C5ECE41B26F2FA5700C67785 /* NumericPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE41A26F2FA5700C67785 /* NumericPadView.swift */; };
+		C5ECE41D26F2FA7900C67785 /* NumericPadRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE41C26F2FA7900C67785 /* NumericPadRow.swift */; };
+		C5ECE41F26F2FAA200C67785 /* NumericPadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE41E26F2FAA200C67785 /* NumericPadButton.swift */; };
+		C5ECE42126F2FAC700C67785 /* ActionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE42026F2FAC700C67785 /* ActionButtonsView.swift */; };
+		C5ECE42526F2FB1B00C67785 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE42426F2FB1B00C67785 /* ActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C5ECE3FD26F2EC1200C67785 /* VotarNoLula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VotarNoLula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5ECE40026F2EC1200C67785 /* VotarNoLulaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotarNoLulaApp.swift; sourceTree = "<group>"; };
-		C5ECE40226F2EC1200C67785 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C5ECE40226F2EC1200C67785 /* VotarNoLulaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotarNoLulaView.swift; sourceTree = "<group>"; };
 		C5ECE40426F2EC1A00C67785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5ECE40726F2EC1A00C67785 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5ECE40926F2EC1A00C67785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5ECE40F26F2F83600C67785 /* VotarNoLulaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotarNoLulaViewModel.swift; sourceTree = "<group>"; };
+		C5ECE41426F2F9F300C67785 /* CandidateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateView.swift; sourceTree = "<group>"; };
+		C5ECE41626F2FA1200C67785 /* CandidateNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateNumbers.swift; sourceTree = "<group>"; };
+		C5ECE41826F2FA3400C67785 /* CandidateNumberRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateNumberRectangle.swift; sourceTree = "<group>"; };
+		C5ECE41A26F2FA5700C67785 /* NumericPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericPadView.swift; sourceTree = "<group>"; };
+		C5ECE41C26F2FA7900C67785 /* NumericPadRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericPadRow.swift; sourceTree = "<group>"; };
+		C5ECE41E26F2FAA200C67785 /* NumericPadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericPadButton.swift; sourceTree = "<group>"; };
+		C5ECE42026F2FAC700C67785 /* ActionButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonsView.swift; sourceTree = "<group>"; };
+		C5ECE42426F2FB1B00C67785 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +70,10 @@
 		C5ECE3FF26F2EC1200C67785 /* VotarNoLula */ = {
 			isa = PBXGroup;
 			children = (
+				C5ECE41126F2F9AE00C67785 /* Views */,
 				C5ECE40026F2EC1200C67785 /* VotarNoLulaApp.swift */,
-				C5ECE40226F2EC1200C67785 /* ContentView.swift */,
+				C5ECE40226F2EC1200C67785 /* VotarNoLulaView.swift */,
+				C5ECE40F26F2F83600C67785 /* VotarNoLulaViewModel.swift */,
 				C5ECE40426F2EC1A00C67785 /* Assets.xcassets */,
 				C5ECE40926F2EC1A00C67785 /* Info.plist */,
 				C5ECE40626F2EC1A00C67785 /* Preview Content */,
@@ -67,6 +87,53 @@
 				C5ECE40726F2EC1A00C67785 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5ECE41126F2F9AE00C67785 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5ECE41326F2F9D700C67785 /* NumericPadViews */,
+				C5ECE41226F2F9BD00C67785 /* CandidateViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5ECE41226F2F9BD00C67785 /* CandidateViews */ = {
+			isa = PBXGroup;
+			children = (
+				C5ECE41426F2F9F300C67785 /* CandidateView.swift */,
+				C5ECE41626F2FA1200C67785 /* CandidateNumbers.swift */,
+				C5ECE41826F2FA3400C67785 /* CandidateNumberRectangle.swift */,
+			);
+			path = CandidateViews;
+			sourceTree = "<group>";
+		};
+		C5ECE41326F2F9D700C67785 /* NumericPadViews */ = {
+			isa = PBXGroup;
+			children = (
+				C5ECE42326F2FB0200C67785 /* ActionButtons */,
+				C5ECE42226F2FAE400C67785 /* NumericPad */,
+			);
+			path = NumericPadViews;
+			sourceTree = "<group>";
+		};
+		C5ECE42226F2FAE400C67785 /* NumericPad */ = {
+			isa = PBXGroup;
+			children = (
+				C5ECE41A26F2FA5700C67785 /* NumericPadView.swift */,
+				C5ECE41C26F2FA7900C67785 /* NumericPadRow.swift */,
+				C5ECE41E26F2FAA200C67785 /* NumericPadButton.swift */,
+			);
+			path = NumericPad;
+			sourceTree = "<group>";
+		};
+		C5ECE42326F2FB0200C67785 /* ActionButtons */ = {
+			isa = PBXGroup;
+			children = (
+				C5ECE42026F2FAC700C67785 /* ActionButtonsView.swift */,
+				C5ECE42426F2FB1B00C67785 /* ActionButton.swift */,
+			);
+			path = ActionButtons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +205,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5ECE40326F2EC1200C67785 /* ContentView.swift in Sources */,
+				C5ECE40326F2EC1200C67785 /* VotarNoLulaView.swift in Sources */,
+				C5ECE41F26F2FAA200C67785 /* NumericPadButton.swift in Sources */,
+				C5ECE42126F2FAC700C67785 /* ActionButtonsView.swift in Sources */,
+				C5ECE42526F2FB1B00C67785 /* ActionButton.swift in Sources */,
 				C5ECE40126F2EC1200C67785 /* VotarNoLulaApp.swift in Sources */,
+				C5ECE41726F2FA1200C67785 /* CandidateNumbers.swift in Sources */,
+				C5ECE41526F2F9F300C67785 /* CandidateView.swift in Sources */,
+				C5ECE41B26F2FA5700C67785 /* NumericPadView.swift in Sources */,
+				C5ECE41926F2FA3400C67785 /* CandidateNumberRectangle.swift in Sources */,
+				C5ECE41D26F2FA7900C67785 /* NumericPadRow.swift in Sources */,
+				C5ECE41026F2F83600C67785 /* VotarNoLulaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

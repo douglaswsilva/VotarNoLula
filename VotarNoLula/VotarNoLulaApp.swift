@@ -11,7 +11,7 @@ import SwiftUI
 struct VotarNoLulaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VotarNoLulaView()
         }
     }
 }
