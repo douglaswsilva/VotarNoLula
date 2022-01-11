@@ -345,7 +345,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VotarNoLula/Preview Content\"";
-				DEVELOPMENT_TEAM = 6P29MLAXD8;
+				DEVELOPMENT_TEAM = JN72TL2C7V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VotarNoLula/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -353,7 +353,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.douglasws89.VotarNoLula;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doug.VotarNoLula;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -367,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VotarNoLula/Preview Content\"";
-				DEVELOPMENT_TEAM = 6P29MLAXD8;
+				DEVELOPMENT_TEAM = 75Z67E6SV2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VotarNoLula/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -375,7 +375,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.douglasws89.VotarNoLula;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dougfdfd.VotarNoLulaa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
