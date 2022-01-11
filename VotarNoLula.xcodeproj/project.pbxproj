@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5B9B225278E4C12001DE74B /* VotarNoLulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B9B224278E4C12001DE74B /* VotarNoLulaTests.swift */; };
 		C5ECE40126F2EC1200C67785 /* VotarNoLulaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE40026F2EC1200C67785 /* VotarNoLulaApp.swift */; };
 		C5ECE40326F2EC1200C67785 /* VotarNoLulaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE40226F2EC1200C67785 /* VotarNoLulaView.swift */; };
 		C5ECE40526F2EC1A00C67785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ECE40426F2EC1A00C67785 /* Assets.xcassets */; };
@@ -22,7 +23,19 @@
 		C5ECE42526F2FB1B00C67785 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECE42426F2FB1B00C67785 /* ActionButton.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C5B9B226278E4C12001DE74B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5ECE3F526F2EC1200C67785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5ECE3FC26F2EC1200C67785;
+			remoteInfo = VotarNoLula;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C5B9B222278E4C12001DE74B /* VotarNoLulaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VotarNoLulaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5B9B224278E4C12001DE74B /* VotarNoLulaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotarNoLulaTests.swift; sourceTree = "<group>"; };
 		C5ECE3FD26F2EC1200C67785 /* VotarNoLula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VotarNoLula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5ECE40026F2EC1200C67785 /* VotarNoLulaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotarNoLulaApp.swift; sourceTree = "<group>"; };
 		C5ECE40226F2EC1200C67785 /* VotarNoLulaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotarNoLulaView.swift; sourceTree = "<group>"; };
@@ -41,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C5B9B21F278E4C12001DE74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5ECE3FA26F2EC1200C67785 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +71,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5B9B223278E4C12001DE74B /* VotarNoLulaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5B9B224278E4C12001DE74B /* VotarNoLulaTests.swift */,
+			);
+			path = VotarNoLulaTests;
+			sourceTree = "<group>";
+		};
 		C5ECE3F426F2EC1200C67785 = {
 			isa = PBXGroup;
 			children = (
 				C5ECE3FF26F2EC1200C67785 /* VotarNoLula */,
+				C5B9B223278E4C12001DE74B /* VotarNoLulaTests */,
 				C5ECE3FE26F2EC1200C67785 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C5ECE3FD26F2EC1200C67785 /* VotarNoLula.app */,
+				C5B9B222278E4C12001DE74B /* VotarNoLulaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +169,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C5B9B221278E4C12001DE74B /* VotarNoLulaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5B9B228278E4C12001DE74B /* Build configuration list for PBXNativeTarget "VotarNoLulaTests" */;
+			buildPhases = (
+				C5B9B21E278E4C12001DE74B /* Sources */,
+				C5B9B21F278E4C12001DE74B /* Frameworks */,
+				C5B9B220278E4C12001DE74B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5B9B227278E4C12001DE74B /* PBXTargetDependency */,
+			);
+			name = VotarNoLulaTests;
+			productName = VotarNoLulaTests;
+			productReference = C5B9B222278E4C12001DE74B /* VotarNoLulaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C5ECE3FC26F2EC1200C67785 /* VotarNoLula */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5ECE40C26F2EC1A00C67785 /* Build configuration list for PBXNativeTarget "VotarNoLula" */;
@@ -162,9 +210,13 @@
 		C5ECE3F526F2EC1200C67785 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					C5B9B221278E4C12001DE74B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C5ECE3FC26F2EC1200C67785;
+					};
 					C5ECE3FC26F2EC1200C67785 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -184,11 +236,19 @@
 			projectRoot = "";
 			targets = (
 				C5ECE3FC26F2EC1200C67785 /* VotarNoLula */,
+				C5B9B221278E4C12001DE74B /* VotarNoLulaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C5B9B220278E4C12001DE74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5ECE3FB26F2EC1200C67785 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,6 +261,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C5B9B21E278E4C12001DE74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B9B225278E4C12001DE74B /* VotarNoLulaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5ECE3F926F2EC1200C67785 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,7 +289,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C5B9B227278E4C12001DE74B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5ECE3FC26F2EC1200C67785 /* VotarNoLula */;
+			targetProxy = C5B9B226278E4C12001DE74B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C5B9B229278E4C12001DE74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P29MLAXD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.VotarNoLulaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VotarNoLula.app/VotarNoLula";
+			};
+			name = Debug;
+		};
+		C5B9B22A278E4C12001DE74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P29MLAXD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglas.VotarNoLulaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VotarNoLula.app/VotarNoLula";
+			};
+			name = Release;
+		};
 		C5ECE40A26F2EC1A00C67785 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -385,6 +501,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C5B9B228278E4C12001DE74B /* Build configuration list for PBXNativeTarget "VotarNoLulaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B9B229278E4C12001DE74B /* Debug */,
+				C5B9B22A278E4C12001DE74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C5ECE3F826F2EC1200C67785 /* Build configuration list for PBXProject "VotarNoLula" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
