@@ -1,8 +1,14 @@
-app_identifier("com.dougfdfd.VotarNoLulaa") # The bundle identifier of your app
-apple_id("douglasws89@gmail.com") # Your Apple email address
+# app_identifier("com.dougfdfd.VotarNoLulaa") # The bundle identifier of your app
+# apple_id("douglasws89@gmail.com") # Your Apple email address
+#
+# itc_team_id("123984284") # App Store Connect Team ID
+# team_id("6P29MLAXD8") # Developer Portal Team ID
 
-itc_team_id("123984284") # App Store Connect Team ID
-team_id("6P29MLAXD8") # Developer Portal Team ID
+app_identifier(ENV["DEVELOPER_APP_IDENTIFIER"])
+apple_id(ENV["FASTLANE_APPLE_ID"])
+
+itc_team_id(ENV["APP_STORE_CONNECT_TEAM_ID"])
+team_id(ENV["DEVELOPER_PORTAL_TEAM_ID"])
 
 # For more information about the Appfile, see:
 #     https://docs.fastlane.tools/advanced/#appfile
