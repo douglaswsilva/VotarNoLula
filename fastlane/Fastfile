@@ -76,7 +76,7 @@ platform :ios do
 
     gym(
       configuration: "Release",
-      xcodeproj: "VotarNoLula.xcodeproj",
+      project: "VotarNoLula.xcodeproj",
       scheme: "VotarNoLula",
       export_method: "app-store",
       export_options: {
